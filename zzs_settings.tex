@@ -1,10 +1,35 @@
-% Zishu Zhou's Personal LaTeX Settings
+%%
+%% Extra Packages
+\usepackage{booktabs}
+\usepackage[skins]{tcolorbox}
+\usepackage{algorithmicx}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{xr}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{threeparttable}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{array}
+\usepackage{bbm}
+\usepackage{calc}
+\usepackage{xspace}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{hhline}
 
-% Declare the argmin and argmax operators
+
+% ======== Zishu's Personal Settings Begin ========
 \DeclareMathOperator*{\argmin}{\arg\!\min}
 \DeclareMathOperator*{\argmax}{\arg\!\max}
-
-% Declare the expectation operator
 \newcommand{\secref}[1]{Section~\ref{sec:#1}}
 \newcommand{\figref}[1]{Figure~\ref{fig:#1}}
 \newcommand{\tabref}[1]{Table~\ref{tab:#1}}
@@ -15,18 +40,23 @@
 \newcommand{\clmref}[1]{Claim~\ref{#1}}
 \newcommand{\lemref}[1]{Lemma~\ref{#1}}
 \newcommand{\ptyref}[1]{Property~\ref{#1}}
-
 \newcommand{\ie}{i.e., }
 \newcommand{\eg}{e.g., }
 \newcommand{\tb}[1]{\textbf{#1}}
 \newcommand{\ti}[1]{\textit{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\mb}[1]{\mathbf{#1}}
 \newcommand{\mbb}[1]{\mathbb{#1}}
 \newcommand{\mc}[1]{\mathcal{#1}}
-\newcommand{\Paragraph}[1]{\noindent\textbf{#1}}
+\newcommand{\Paragraph}[1]{\noindent\textbf{#1} \enspace}
+\newcommand{\urlfootnote}[1]{\footnote{\url{#1}}}
 \def\ith{i^\textit{th}}
+\graphicspath{{figures/}}
+% ======== Zishu's Personal Settings End ========
 
-% Define a new theorem style
-\newtheorem{assumption}{Assumption}
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
+
+%% Define Method Short Name
+\newcommand{\method}{FedSTCF\xspace}
+
+%% Define Column Type
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
